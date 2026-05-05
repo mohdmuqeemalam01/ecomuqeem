@@ -1,0 +1,97 @@
+.checkoutContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa, #e8ecf4);
+}
+
+.formPanel {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Progress */
+.stepProgressBar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  margin-bottom: 2rem;
+}
+
+.progress_indicator {
+  height: 100%;
+  background: #5d5dff;
+  border-radius: 9999px;
+  transition: width 0.4s ease;
+}
+
+/* Steps */
+.step_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.step_item {
+  text-align: center;
+  flex: 1;
+}
+
+.step_number {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border-radius: 50%;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.step_title {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+
+.active .step_number {
+  background: #5d5dff;
+  color: white;
+}
+
+.completed .step_number {
+  background: #10b981;
+  color: white;
+}
+
+/* Form */
+.form_step_active {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .formPanel {
+    padding: 1.5rem;
+  }
+
+  .step_title {
+    display: none;
+  }
+}

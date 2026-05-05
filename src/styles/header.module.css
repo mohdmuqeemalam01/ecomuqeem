@@ -1,0 +1,259 @@
+/* ================= HEADER ================= */
+.container {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #1b4332;
+  color: white;
+  user-select: none;
+}
+
+/* ================= LOGO ================= */
+.logo {
+  height: 55px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+/* ================= SEARCH ================= */
+.inputcontainer {
+  height: 44px;
+  width: 40%;
+  background-color: white;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+
+.search {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding-left: 12px;
+  font-size: 16px;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #1b4332;
+}
+
+/* ================= SEARCH SUGGESTIONS ================= */
+.searchhelp {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  background: white;
+  color: black;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.searchList {
+  list-style: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.searchList:hover {
+  background-color: #f3ce8a;
+  color: black;
+}
+
+/* ================= TOP TEXT ================= */
+.toptext {
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+
+.toptext:hover {
+  border-bottom: 2px solid white;
+}
+
+/* ================= CART ================= */
+.cartImage {
+  position: relative;
+}
+
+.cartCount {
+  position: absolute;
+  top: 3px;
+  right: 38px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(248, 241, 237);
+}
+
+/* ================= DROPDOWN ================= */
+.dropdown {
+  position: relative;
+}
+
+/* visible dropdown */
+.drop {
+  width: 260px;
+  position: absolute;
+  top: 30px;
+  right: -20px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* hidden dropdown */
+.notdrop {
+  display: none;
+}
+
+/* Desktop hover support */
+@media (hover: hover) {
+  .dropdown:hover .drop {
+    display: block;
+  }
+}
+
+/* ================= DROPDOWN CONTENT ================= */
+.newcustomer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btndrop {
+  background: transparent;
+  border: none;
+  color: #3354c0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.list:hover {
+  color: #1b4332;
+}
+
+/* ================= LINKS ================= */
+.Link {
+  text-decoration: none;
+  color: white;
+}
+
+.Links {
+  text-decoration: none;
+  color: black;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .inputcontainer {
+    width: 100%;
+  }
+
+  .searchhelp {
+    width: 100%;
+    top: 55px;
+  }
+
+  .toptext {
+    font-size: 14px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .inputcontainer {
+    width: 100%;
+  }
+
+  .search {
+    font-size: 14px;
+  }
+
+  .drop {
+    width: 100%;
+    right: 0;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    height: 70px;
+    padding: 0 15px;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .inputcontainer {
+    width: 45%;
+    height: 42px;
+  }
+
+  .search {
+    font-size: 15px;
+  }
+
+  .searchhelp {
+    width: 45%;
+    top: 65px;
+  }
+
+  .toptext {
+    font-size: 15px;
+  }
+
+  .drop {
+    width: 260px;
+  }
+}

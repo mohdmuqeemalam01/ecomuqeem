@@ -1,0 +1,21 @@
+
+
+.footer {
+ display: flex;
+  flex-direction: column;
+  background-color: #52b788;
+  position:static;
+  width: 100%;
+text-align: center;
+  padding: 10px 0;
+  bottom: 0px;
+  position:fixed ;
+  bottom: 0px;
+  
+}
+
+.content {
+  flex: 1;               /* Push footer to bottom */
+  padding: 20px;
+}
+

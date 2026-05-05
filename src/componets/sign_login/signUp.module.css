@@ -1,0 +1,297 @@
+/* =========================
+   BASE & MAIN CONTAINER
+========================= */
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Modern, softer gradient background */
+  background: linear-gradient(135deg, #f0f7f4 0%, #dcf0e5 100%);
+  padding: 20px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* =========================
+   FORM & OTP CARDS
+========================= */
+.Form,
+.otpBox {
+  background: #ffffff;
+  width: 100%;
+  text-align: center;
+  /* Modern soft shadows and rounded corners */
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06), 0 2px 6px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.Form:hover,
+.otpBox:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08), 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+.head {
+  margin-bottom: 24px;
+  color: #2b6a4a; /* Deeper, more accessible green */
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+.level {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 16px;
+  border-radius: 12px;
+  border: 1.5px solid #e1e8e4;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  background: #fafcfb;
+  color: #333;
+}
+
+.level::placeholder {
+  color: #a0b0a8;
+}
+
+/* Modern accessibility focus rings */
+.level:focus {
+  border-color: #52a47d;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(82, 164, 125, 0.15);
+}
+
+/* =========================
+   PASSWORD FIELD
+========================= */
+.passwordWrapper {
+  position: relative;
+}
+
+/* Prevents text from hiding under the eye icon */
+.passwordWrapper .level {
+  padding-right: 45px; 
+}
+
+.eye {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  margin-top: -8px; /* Offset for the input's margin-bottom */
+}
+
+.eye:hover {
+  opacity: 1;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.button,
+.utton {
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Active valid button */
+.button {
+  background: linear-gradient(135deg, #52a47d, #40916c);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(64, 145, 108, 0.25);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(64, 145, 108, 0.35);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Disabled button */
+.utton {
+  background: #d4e8dd;
+  color: #8cb8a0;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* =========================
+   FOOTER TEXT & LINKS
+========================= */
+.bottomText {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+.link {
+  color: #40916c;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #2b6a4a;
+  text-decoration: underline;
+}
+
+.error {
+  color: #e63946;
+  font-size: 13px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  background: #fde8e9;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+/* =========================
+   TOAST ALERT
+========================= */
+.alertBox {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #2b6a4a;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 8px 24px rgba(43, 106, 74, 0.3);
+  animation: slideIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* 📱 MOBILE (Up to 480px) */
+@media (max-width: 480px) {
+  .Form, .otpBox {
+    padding: 30px 20px;
+    max-width: 100%;
+    border-radius: 16px;
+  }
+  .head {
+    font-size: 22px;
+  }
+  .level {
+    height: 48px; /* Kept large for easy touch/tapping */
+    font-size: 15px;
+  }
+  .button, .utton {
+    height: 48px; 
+    font-size: 15px;
+  }
+  .alertBox {
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
+}
+
+/* 📱 TABLET (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .Form, .otpBox {
+    max-width: 400px;
+    padding: 40px 30px;
+  }
+  .head {
+    font-size: 26px;
+  }
+  .level, .button, .utton {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* 💻 LAPTOP (769px to 1199px) */
+@media (min-width: 769px) and (max-width: 1199px) {
+  .Form, .otpBox {
+    max-width: 440px;
+    padding: 45px 35px;
+  }
+  .head {
+    font-size: 28px;
+  }
+  .level, .button, .utton {
+    height: 52px;
+    font-size: 16px;
+  }
+}
+
+/* 🖥️ BIG SCREENS / DESKTOP (1200px and up) */
+@media (min-width: 1200px) {
+  .Form, .otpBox {
+    max-width: 480px; /* Slightly wider for large displays */
+    padding: 50px 45px;
+  }
+  .head {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .level {
+    height: 56px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .button, .utton {
+    height: 56px;
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .eye {
+    margin-top: -10px;
+  }
+}
+.otpBox {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 360px; /* Or 400px */
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  /* Ensure NO height: 100% or min-height here */
+}

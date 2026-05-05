@@ -1,0 +1,105 @@
+.container {
+  background: #e2e8f0;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.mainBody {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+/* LEFT & RIGHT */
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+.card,
+.cardCenter {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cardCenter {
+  text-align: center;
+}
+
+.cardCenter img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+.infoRow input {
+  padding: 6px;
+  width: 60%;
+}
+
+.actions {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.actions button {
+  padding: 8px 16px;
+  background: #52b788;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.noUser {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.link {
+  color: blue;
+  cursor: pointer;
+}
+
+/* ✅ MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .infoRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .infoRow input {
+    width: 100%;
+  }
+
+  .actions {
+    text-align: center;
+  }
+}

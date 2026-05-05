@@ -1,0 +1,170 @@
+/* =========================
+   CATEGORY SECTION
+========================= */
+.container {
+  margin-top: 40px;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #1b4332;
+  border-radius: 10px;
+}
+
+.card {
+  min-width: 160px;
+  /* flex-shrink: 5; */
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.button {
+  height: 36px;
+  border: none;
+  background-color: #1b4332;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2d6a4f;
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+.Main {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  padding: 10px;
+}
+
+.CardBody {
+  width: 23%;
+  min-height: 380px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CardBody:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+}
+
+.NewImage {
+  width: 100%;
+  max-width: 220px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.rating {
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+  background-color: #1b4332;
+  width: 90%;
+  height: 36px;
+  margin-top: auto;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #2d6a4f;
+}
+
+/* =========================
+   TABLET (≤1024px)
+========================= */
+@media (max-width: 1024px) {
+  .CardBody {
+    width: 48%;
+  }
+}
+
+/* =========================
+   MOBILE (≤768px)
+========================= */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+  }
+
+  .CardBody {
+    width: 100%;
+  }
+
+  .NewImage {
+    height: 180px;
+  }
+
+  .button {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (≤480px)
+========================= */
+@media (max-width: 480px) {
+  .img {
+    height: 140px;
+  }
+
+  .NewImage {
+    height: 160px;
+  }
+}

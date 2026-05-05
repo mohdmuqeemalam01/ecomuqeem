@@ -1,0 +1,12 @@
+
+li{
+    list-style: none;
+}
+Link{
+    text-decoration: none;
+}
+
+::placeholder{
+    color: grey;    
+    margin-left: 8px;
+}
