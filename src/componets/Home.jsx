@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import ReadMore from "./ReadMore";
 import Slider from '../styles/slider.jsx'
 import { Link, useNavigate } from "react-router-dom";
