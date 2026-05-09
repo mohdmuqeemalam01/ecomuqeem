@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { useNavigate } from "react-router";
 import { BuyItem } from "../context/store";
 import FourDigitInpu from "./otp";
-import styles from "../sign_login/signup.module.css";
+import styles from "../sign_login/signUp.module.css";
 
 function SignUp() {
   const { setUser, user } = useContext(BuyItem);
