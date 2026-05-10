@@ -1,4 +1,4 @@
-import styles from "../styles/home.module.css";
+import styles from "../styles/Home.module.css";
 import ReadMore from "./ReadMore";
 import { useEffect, useState } from "react";
 import { useContext } from "react";
