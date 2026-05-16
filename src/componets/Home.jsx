@@ -107,40 +107,40 @@ export default Home;
 // 
 const data = [
   {
-    img: "image/1m.png",
+    img: "/image/1m.png",
     title: "Skin Care",
     ress: "https://dummyjson.com/products/category/skin-care",
   },
 
   {
-    img: "image/2m.jpeg",
+    img: "/image/2m.jpeg",
     title: "Electronics Products",
     ress: "https://dummyjson.com/products/category/mobile-accessories",
   },
   {
-    img: "image/3m.png",
+    img: "/image/3m.png",
     title: "Makeup",
     ress: "https://dummyjson.com/products/category/beauty",
   },
   {
-    img: "image/4m.png",
+    img: "/image/4m.png",
     title: "Smart phones",
     ress: "https://dummyjson.com/products/category/smartphones",
     //  ress: "https://dummyjson.com/products/search?q=phone",//for searching
   },
   {
-    img: "image/5m.jpeg",
+    img: "/image/5m.jpeg",
     title: "Bags",
     //  ress: "https://dummyjson.com/products/search?q=phone"//for searching
     ress: "https://dummyjson.com/products/category/womens-bags"
   },
   {
-    img: "image/6m.jpeg",
+    img: "/image/6m.jpeg",
     title: "Shoes",
     ress: "https://dummyjson.com/products/category/mens-shoes",
   },
   {
-    img: "image/7m.jpeg",
+    img: "/image/7m.jpeg",
     title: "sandals",
     ress: "https://dummyjson.com/products/category/womens-shoes",
   },
