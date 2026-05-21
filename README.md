@@ -119,7 +119,8 @@ https://dummyjson.com/products
 
 <hr>
 
-<h2>📸 Screenshots</h2>
+<h2  align="center" >📸 Screenshots</h2>
+<hr style="border: 0.5px solid #ccc;">
 <h4>## Home Page</h4>
 <img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/cart.png" width="100%" />
 
