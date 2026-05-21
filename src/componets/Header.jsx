@@ -16,39 +16,39 @@ const [show, setShow] = useState(false);
   const { data, loginStatus, user, setLoginStatus } = useContext(BuyItem);
 
   /* ---------------- FETCH PRODUCTS ---------------- */
-  useEffect(() => {
-    const fetchProducts = async () => {
-      try {
-        const res = await fetch(
-          "https://dummyjson.com/products?limit=198"
-        );
-        const result = await res.json();
-        setAllProducts(result.products || []);
-      } catch (error) {
-        console.error("Product fetch failed", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchProducts = async () => {
+  //     try {
+  //       const res = await fetch(
+  //         "https://dummyjson.com/products?limit=198"
+  //       );
+  //       const result = await res.json();
+  //       setAllProducts(result.products || []);
+  //     } catch (error) {
+  //       console.error("Product fetch failed", error);
+  //     }
+  //   };
 
-    fetchProducts();
-  }, []);
+  //   fetchProducts();
+  // }, []);
 
-  /* ---------------- SEARCH FILTER ---------------- */
-  useEffect(() => {
-    if (!value.trim()) {
-      setSearchHelp([]);
-      return;
-    }
+  // /* ---------------- SEARCH FILTER ---------------- */
+  // useEffect(() => {
+  //   if (!value.trim()) {
+  //     setSearchHelp([]);
+  //     return;
+  //   }
 
-    const text = value.toLowerCase();
+  //   const text = value.toLowerCase();
 
-    const filtered = allProducts.filter(
-      (item) =>
-        item.title.toLowerCase().includes(text) ||
-        item.category.toLowerCase().includes(text)
-    );
+  //   const filtered = allProducts.filter(
+  //     (item) =>
+  //       item.title.toLowerCase().includes(text) ||
+  //       item.category.toLowerCase().includes(text)
+  //   );
 
-    setSearchHelp(filtered.slice(0, 8)); // limit results
-  }, [value, allProducts]);
+  //   setSearchHelp(filtered.slice(0, 8)); // limit results
+  // }, [value, allProducts]);
 
   //  useEffect(()=>{
   //   setTimeout(
@@ -59,19 +59,21 @@ const [show, setShow] = useState(false);
 
   const toggleDropdown = () => {
     setShow(prev => !prev);
+    // console.log(show)
   };
 
   const closeDropdown = () => {
-    setShow(false);
+    setShow(true);
   };
 
   const active = () => {
-    setShow(false);
+    setShow(true);
+    // console.log(show);
 
   }
   /* ---------------- LOGOUT ---------------- */
   const handleLogout = () => {
-    setLoginStatus(false);
+    setLoginStatus(true);
   };
 
   return (
@@ -120,7 +122,7 @@ const [show, setShow] = useState(false);
           {loginStatus && user?.name ? (
             ` Hello, ${user.name.slice(0, 4)}..`
           ) : (
-            <Link className={styles.Link} to="/Login">
+            <Link    className={styles.Link} to="/Login">
               LogIn
             </Link>
           )}
@@ -137,8 +139,8 @@ const [show, setShow] = useState(false);
           ) : (
             <div className={styles.newcustomer}>
               <h5>New Customer?</h5>
-              <Link to="/SignUp">
-                <button onClick={closeDropdown} className={styles.btndrop}>SignUp</button>
+              <Link onClick= {()=>{toggleDropdown} } to="/SignUp">
+                <button onClick= {()=>{toggleDropdown} } className={styles.btndrop}>SignUp</button>
               </Link>
             </div>
           )}
@@ -146,14 +148,14 @@ const [show, setShow] = useState(false);
           <hr />
 
           <ul>
-            <Link className={styles.Links} to="/MyProfile">
-              <li className={styles.list} onClick={closeDropdown}>
+            <Link className={`${styles.Links} `}to="/MyProfile">
+              <li  className={`  ${styles.list} `} onClick= {()=>{toggleDropdown} }>
                 My Profile
               </li>
             </Link>
             <li onClick={active} className={styles.list}>Rewards</li>
             <li onClick={active} className={styles.list}>Gift Cards</li>
-            <li onClick={()=>setShow(false)} className={styles.list}>Favorite</li>
+            <li onClick={()=>setShow(true)} className={styles.list}>Favorite</li>
           </ul>
         </div>
       </div>

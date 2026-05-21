@@ -12,6 +12,13 @@
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
+@media screen and (max-width:800px){
+  .main {
+  margin-top: 100px;
+  overflow-y: hidden;
+}
+}
+
 /* =========================
    FORM & OTP CARDS
 ========================= */

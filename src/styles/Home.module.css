@@ -9,6 +9,11 @@
   padding-bottom: 10px;
   scroll-behavior: smooth;
 }
+@media screen and (max-width:800px){
+  .container {
+  margin-top: 50px;}
+}
+
 
 .container::-webkit-scrollbar {
   height: 6px;
