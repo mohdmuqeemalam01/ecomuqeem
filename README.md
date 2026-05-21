@@ -1,4 +1,4 @@
-<h1 styles="color":"Green"># 🛒 React E-Commerce Store</h1>
+
 <h1 align="center">🛒 React E-Commerce Store</h1>
 
 <p align="center">
