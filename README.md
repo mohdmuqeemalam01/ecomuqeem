@@ -121,7 +121,7 @@ https://dummyjson.com/products
 
 <h2>📸 Screenshots</h2>
 
-<img src="./screenshots/home.png" width="100%" />
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/cart.png" width="100%" />
 
 <hr>
 
