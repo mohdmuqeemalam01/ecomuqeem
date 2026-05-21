@@ -7,7 +7,7 @@ A modern e-commerce web application built with React JS using a Dummy API.
 
 <hr>
 
-<h2>📂 Step 1: Open Your Project Folder</h2>
+<h2>📂Open Your Project Folder</h2>
 
 <p>
 Open your React project in any code editor:
@@ -51,6 +51,7 @@ README.md
   <li>React JS</li>
   <li>HTML5</li>
   <li>CSS3</li>
+  <li>Bootstrap</li>
   <li>JavaScript</li>
   <li>React Router DOM</li>
 </ul>
@@ -60,7 +61,7 @@ README.md
 <h2>▶️ Installation</h2>
 
 <pre>
-git clone https://github.com/yourusername/react-ecommerce.git
+git clone https://github.com/mohdmuqeemalam01/ecomuqeem.git
 
 cd react-ecommerce
 
@@ -94,6 +95,6 @@ https://dummyjson.com/products
 <h2>👨‍💻 Author</h2>
 
 <p>
-Your Name <br>
-GitHub: https://github.com/yourusername
+Mohd Muqeem Alam <br>
+GitHub: https://github.com/mohdmuqeemalam01
 </p>
