@@ -22,6 +22,39 @@ Open your React project in any code editor:
 
 <hr>
 
+ <pre>
+ecomuqeem/
+│── dist/
+│── node_modules/
+│── public/
+│── src/
+│   │── componets/
+│   │   │── context/
+│   │   │── order/
+│   │   │── sign_login/
+│   │   │── Cart.jsx
+│   │   │── Header.jsx
+│   │   │── Home.jsx
+│   │   │── ItemDetails.jsx
+│   │   │── myprofile.jsx
+│   │   │── PlaceOrder.jsx
+│   │
+│   │── styles/
+│   │   │── cart.module.css
+│   │   │── header.module.css
+│   │   │── Home.module.css
+│   │   │── ItemDetails.module.css
+│   │
+│   │── App.jsx
+│   │── main.jsx
+│   │── data.json
+│
+│── package.json
+│── vite.config.js
+│── vercel.json
+│── README.md
+</pre>
+<hr>
 <h2>⚙️ Step 2: Create README.md File</h2>
 
 <p>Create a file named:</p>
