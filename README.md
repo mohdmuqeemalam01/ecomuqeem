@@ -120,9 +120,42 @@ https://dummyjson.com/products
 <hr>
 
 <h2  align="center" >📸 Screenshots</h2>
-<hr style="border: 0.5px solid #ccc;">
-<h4>## Cart Page</h4>
+
+<h4>## Home</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/home.png" width="100%" />
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/home2.png" width="100%" />
+
+<h4>## Product details</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/itemdetails.png" width="100%" />
+<h4>## Login</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/login.png" width="100%" />
+<h4>## SignUp</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/signup.png" width="100%" />
+<h4>## OTP Verification</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/otp_verification.png" width="100%" />
+<h4>## Profile</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/profile.png" width="100%" />
+<h4>## Menu</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/option.png" width="100%" />
+
+<h4>## Cart</h4>
 <img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/cart.png" width="100%" />
+
+
+<h4>## Payment form</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/payment1.png" width="100%" />
+
+<h4>## QR Code for Payment</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/payment2.png" width="100%" />
+
+<h4># Done</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/payment3.png" width="100%" />
+
+<h4>## Order Status</h4>
+<img src="https://github.com/mohdmuqeemalam01/ecomuqeem/blob/main/screenshot/order_status.png" width="100%" />
+
+
+
 
 <hr>
 
